@@ -12,31 +12,29 @@ Template Name: Buscador
 
         <h2></h2>
 
+        Country:
+
         <select name="country" id="country">
-            <option value=""></option>
+            {countryOptions}
         </select>
+
+        State:
 
         <select name="state" id="state">
             <option value=""></option>
         </select>
 
+        District:
+
         <select name="district" id="district">
-            <option value=""></option>
+            {stateOptions}
         </select>
 
 
 
         <script>
 
-            $(function(){
-                //alert("hooola");
-
-                $.getJSON('http://localhost/pruebas/wp-content/themes/test/countries.json', function(result){
-                    $.each(result, function(i, country){
-                        alert(country.name + " " + country.code);
-                    });
-                });
-            });
+            
 
             
 

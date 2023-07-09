@@ -9,6 +9,15 @@ function enquejquery() {
 add_action('wp_enqueue_scripts', 'enquejquery');
 
 
+function cc_mime_types($mimes) {
+	$mimes['json'] = 'application/json';
+	$mimes['svg'] = 'image/svg+xml';
+	return $mimes;
+	}
+	
+	add_filter('upload_mimes', 'cc_mime_types');
+
+
 // Register Custom Post Type
 function eventos() {
 
