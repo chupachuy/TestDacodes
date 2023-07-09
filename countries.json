@@ -1,10 +1,12 @@
 [
     {
-        "name": "Afghanistan",
-        "code": "AF"
+        "name":"Seleciona un estado"
     },
     {
-        "name": "México",
-        "code": "MX"
+        "name":"Aguascalientes"
+    },
+    {
+        "name":"Jesus Maria"
     }
+
 ]

@@ -12,24 +12,23 @@ Template Name: Buscador
 
         <h2></h2>
 
-        Country:
+       <!-- Continents:
+
+        <select name="continent" id="continent">
+            {continentOptions}
+        </select>
+
+        Pais:
 
         <select name="country" id="country">
-            {countryOptions}
+            <option value=""></option>
         </select>
 
         State:
 
         <select name="state" id="state">
-            <option value=""></option>
-        </select>
-
-        District:
-
-        <select name="district" id="district">
             {stateOptions}
-        </select>
-
+        </select>-->
 
 
         <script>
