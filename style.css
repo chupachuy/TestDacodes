@@ -4,3 +4,27 @@ Author: Jesus Lopez Velazquez
 Description: Tema para test
 Version: 1.0
 */
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    text-transform: uppercase;
+}
+.container{
+    max-width: 1024px;
+    margin: 2rem auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.event{
+    padding: 3rem;
+    border: solid thin #000;
+    margin: 1rem;
+}
