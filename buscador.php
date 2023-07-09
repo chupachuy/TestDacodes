@@ -12,35 +12,22 @@ Template Name: Buscador
 
         <h2></h2>
 
-       <!-- Continents:
-
-        <select name="continent" id="continent">
-            {continentOptions}
+        <select name="country" id="country" class="form-control input-lg">
+            <option value="">Select country</option>
         </select>
-
-        Pais:
-
-        <select name="country" id="country">
-            <option value=""></option>
+        <br />
+        <select name="state" id="state" class="form-control input-lg">
+            <option value="">Select state</option>
         </select>
-
-        State:
-
-        <select name="state" id="state">
-            {stateOptions}
-        </select>-->
+        <br />
+        <select name="city" id="city" class="form-control input-lg">
+            <option value="">Select city</option>
+        </select>
 
 
         <script>
 
             
-
-            
-
-            /*$(document).ready(function(){
-                alert("Hooola");
-            });*/
-
 
         </script>
     </div>
