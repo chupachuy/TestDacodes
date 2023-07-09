@@ -25,15 +25,13 @@ Template Name: Buscador
         </select>
 
 
-        
-
 
         <script>
 
             $(function(){
                 //alert("hooola");
 
-                $.getJSON('countries.json', function(result){
+                $.getJSON('http://localhost/pruebas/wp-content/themes/test/countries.json', function(result){
                     $.each(result, function(i, country){
                         alert(country.name + " " + country.code);
                     });
