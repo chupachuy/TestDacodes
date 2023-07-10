@@ -47,7 +47,7 @@ Template Name: Buscador
             <br />
             <label for="countpaisry">Selecciona un país:</label>
             <select name="pais" id="pais" class="select-css">
-                <option value="">Selseciona...</option>
+                <option value="">Selecciona...</option>
             </select>
             <br />
             <label for="country">Selecciona una ciudad:</label>

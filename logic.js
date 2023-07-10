@@ -6,7 +6,7 @@ $(document).ready(function() {
         var html_code = '';
         $.getJSON('../wp-content/themes/test/country.json', function(data) {
 
-            html_code += '<option value="">Select ' + id + '</option>';
+            html_code += '<option value="">Selecciona un ' + id + '</option>';
             $.each(data, function(key, value) {
                 if (id == 'continente') {
                     if (value.parent_id == '0') {
@@ -28,8 +28,8 @@ $(document).ready(function() {
         if (continente_id != '') {
             load_json_data('pais', continente_id);
         } else {
-            $('#pais').html('<option value="">Select pais</option>');
-            $('#estado').html('<option value="">Select estado</option>');
+            $('#pais').html('<option value="">Selecciona un pais</option>');
+            $('#estado').html('<option value="">Selecciona un estado</option>');
         }
     });
     $(document).on('change', '#pais', function() {
@@ -37,7 +37,7 @@ $(document).ready(function() {
         if (pais_id != '') {
             load_json_data('estado', pais_id);
         } else {
-            $('#estado').html('<option value="">Select Estado</option>');
+            $('#estado').html('<option value="">Selecciona un estado</option>');
         }
     });
 
