@@ -36,8 +36,8 @@ Template Name: Inicio
                 <div class="main-title">
                     <h1><?php the_title(); ?></h1>
                     <div class="dates">
-                        <?php the_field('fecha_de_inicio'); ?><br>
-                        <?php the_field('fecha_de_fin'); ?>
+                        <p>Fecha inicio: <strong><?php the_field('fecha_de_inicio'); ?></strong></p>
+                        <p>Fecha fin: <strong><?php the_field('fecha_de_fin'); ?>
                     </div>
                 </div>
 
@@ -61,6 +61,8 @@ Template Name: Inicio
     </div>
 </main>
 
+
+<div class="separar"></div>
     
 
     
