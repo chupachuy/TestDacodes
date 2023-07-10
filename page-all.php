@@ -47,5 +47,5 @@ Template Name: Todos los eventos
             <?php endif; ?>
     </div>
 </main>
- 
+ <div class="separar"></div>
 <?php get_footer(); ?>
