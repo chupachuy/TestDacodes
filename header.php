@@ -8,3 +8,12 @@
     <?php wp_head(); ?>
 </head>
 
+<header class="header">
+    <section class="header-content">
+        <nav class="menu">
+            <a href="<?php bloginfo('url'); ?>">Home</a>
+            <a href="<?php bloginfo('url'); ?>/todos-los-eventos">Todos los eventos</a>
+            <a href="<?php bloginfo('url'); ?>/buscador">Buscador</a>
+        </nav>
+    </section>
+</header>

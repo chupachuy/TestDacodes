@@ -14,6 +14,29 @@ html{
 h1, h2, h3, h4, h5, h6{
     text-transform: uppercase;
 }
+
+
+header{
+    background-color: #e5e5e5;
+    padding: 2rem
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    font-size: 115%;
+}
+
+.menu a{
+    color: chocolate;
+    padding: 0 1vw;
+    transition: all .3s ease-in-out;
+}
+
+.menu a:hover{
+    opacity: .75;
+}
+
 .container{
     max-width: 1024px;
     margin: 2rem auto;
@@ -27,4 +50,41 @@ h1, h2, h3, h4, h5, h6{
     padding: 3rem;
     border: solid thin #000;
     margin: 1rem;
+}
+
+footer{
+    margin-top: 3rem;
+    background-color: dimgrey;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    color: #fff;
+}
+
+.separar{
+    clear: both;
+    height: 5rem;
+}
+
+/** SELECTORES **/
+
+.selectores{
+    margin: 0 auto;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+}
+
+.selectores > select{
+    padding: 0.2rem;
+    margin: 1rem auto;
+    display: block;
+    width: 100%;
+}
+
+.selectores select{
+    font-size: 1rem;
+    font-family: sans-serif;
 }

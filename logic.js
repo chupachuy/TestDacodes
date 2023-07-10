@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    load_json_data('country');
+    load_json_data('continente');
 
     function load_json_data(id, parent_id) {
         var html_code = '';
@@ -8,7 +8,7 @@ $(document).ready(function() {
 
             html_code += '<option value="">Select ' + id + '</option>';
             $.each(data, function(key, value) {
-                if (id == 'country') {
+                if (id == 'continente') {
                     if (value.parent_id == '0') {
                         html_code += '<option value="' + value.id + '">' + value.name + '</option>';
                     }
@@ -23,21 +23,23 @@ $(document).ready(function() {
 
     }
 
-    $(document).on('change', '#country', function() {
-        var country_id = $(this).val();
-        if (country_id != '') {
-            load_json_data('state', country_id);
+    $(document).on('change', '#continente', function() {
+        var continente_id = $(this).val();
+        if (continente_id != '') {
+            load_json_data('pais', continente_id);
         } else {
-            $('#state').html('<option value="">Select state</option>');
-            $('#city').html('<option value="">Select city</option>');
+            $('#pais').html('<option value="">Select pais</option>');
+            $('#estado').html('<option value="">Select estado</option>');
         }
     });
-    $(document).on('change', '#state', function() {
-        var state_id = $(this).val();
-        if (state_id != '') {
-            load_json_data('city', state_id);
+    $(document).on('change', '#pais', function() {
+        var pais_id = $(this).val();
+        if (pais_id != '') {
+            load_json_data('estado', pais_id);
         } else {
-            $('#city').html('<option value="">Select city</option>');
+            $('#estado').html('<option value="">Select Estado</option>');
         }
     });
+
+
 });
